@@ -1,0 +1,273 @@
+.App {
+  text-align: center;
+}
+
+/*  NAV
+    
+    TODO:
+    create a media query for mobile devices
+*/
+.nav {
+  display:flex;
+  position: fixed;
+  top:0;
+  left:0;
+  height:80px;
+  width:100%;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #fff;
+  background-color: #fff;
+}
+
+.nav-container {
+
+}
+
+.nav-tab {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/*  HOME
+    
+    TODO:
+*/
+
+.home-backdrop {
+  background-image: url("/kdcover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:80vh;
+}
+
+
+/* COUNTDOWN TIMER */
+
+.countdown {
+  height: 300px;
+  background-color: #ebc6c6;
+}
+
+
+/* ABOUTIMG */
+
+.person-img {
+  max-width: 100%;
+}
+.about-img-people {
+  display: flex;
+  flex-direction: row;
+  flex: wrap;
+}
+@media (max-width: 600px) {
+  .about-img-people {
+      flex-direction: column;    
+  }
+}
+
+.about-img-container {
+  padding: 30px;
+}
+.about-img-person {
+  flex: 1;
+}
+.about-img-person .person-role {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+
+/* MOREINFO */
+
+.more-info-container {
+  background-color: #f6f5ec;
+  padding: 50px;
+}
+.more-info-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.more-info-item {
+  padding: 30px;
+}
+.more-info-item-elements {
+  display: flex;
+  flex-direction: column;
+}
+.more-info-heading {
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.more-info-subheading {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #edc6c6;
+}
+.more-info-btn {
+  border: 2px solid #edc6c6;
+  background-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 30px;
+}
+.more-info-btn:hover {
+  background-color: #edc6c6;
+  cursor: pointer;
+}
+
+.bottom-icon {
+  background-image: url('/bottom_icons_frame.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.bottom-icon img {
+  vertical-align: 0;
+  border: 0;
+}
+
+
+/* FOOTER */
+
+.footer-container {
+  background-color: #2d2e21;
+  padding: 100px;
+}
+.footer-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footer-item p {
+  font-size: 20px;
+  font-weight: 900;
+  color: #d68f8f;
+}
+
+
+/* WEDDING */
+
+.events {
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  padding: 30px;
+}
+.event {
+  flex:1;
+  border:4px solid #ebc6c6;
+  margin: 40px;
+}
+.event-title {
+  background-color: #ebc6c6;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.event-info {
+  padding: 30px;
+}
+.event-time {
+  font-size: 50px;
+}
+.event-timing {
+  padding: 20px;
+}
+.event-timings {
+  display: flex;
+  flex-direction: row;
+}
+.event-info-details {
+  padding: 20px;
+}
+.event-info-details p, .event-info-details a {
+  margin: 0px;
+}
+.event-timing p, .event-timing a {
+  margin: 0px;
+}
+.event-location {
+  margin: 0px 100px 100px 100px;
+}
+
+/* GENERAL */
+
+.subheading {
+  margin: 0px;
+  padding: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.sub-backdrop {
+  display: flex;
+  height: 55vh;
+  background-image: url('/hdr2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  align-items: center;
+  justify-content: center;
+}
+.sub-backdrop-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub-backdrop-item > p {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 900;
+}
+.sub-backdrop-item-contact {
+  border: 2px solid #ebc6c6;
+}
+.sub-backdrop-item-contact > p {
+  color: #ebc6c6;
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
+}
+
+
+/* GUEST INFO */
+
+.guestinfo-elements {
+  margin: 40px;
+}
+
+.guestinfo-element {
+  border: 4px solid #ebc6c6;
+  margin: 20px;
+  padding: 20px;
+}
+.guestinfo-title p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.guestinfo-details {
+  display: flex;
+  flex-direction: row;
+}
+.guestinfo-details-text {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.guestinfo-details-img img {
+  max-width: 100%;
+}
