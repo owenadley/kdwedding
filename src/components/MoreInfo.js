@@ -21,7 +21,7 @@ class MoreInfo extends React.Component {
         return <Redirect to="/wedding" push={true}/>
     }
     if (this.state.redirectRegistry) {
-        //return <Redirect to="/" push={true}/>
+        return <Redirect to="/registry" push={true}/>
     }    
 
       return (

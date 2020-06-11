@@ -7,7 +7,7 @@ class Wedding extends React.Component {
   render() {
     return (
       <div className="wedding">
-        <Header />
+        <Header title="The Wedding" />
         <div className="events">
             <div className="event">
               <div className="event-title">Ceremony</div>
@@ -39,7 +39,7 @@ class Wedding extends React.Component {
                   </div>
                   <div className="event-timing">
                     <p>Dinner</p>
-                    <p className="event-time">6:00 pm</p>
+                    <p className="event-time">6:00pm</p>
                   </div>                  
                 </div>
               </div>

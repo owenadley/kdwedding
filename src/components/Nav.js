@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Home from '../components/pages/Home';
 import Wedding from '../components/pages/Wedding';
 import GuestInfo from '../components/pages/GuestInfo';
+import Registry from '../components/pages/Registry';
 
 class Nav extends React.Component {
   render() {
@@ -28,6 +29,9 @@ class Nav extends React.Component {
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
           <Switch>
+            <Route path="/registry">
+              <Registry />
+            </Route>             
             <Route path="/wedding">
               <Wedding />
             </Route>
@@ -36,7 +40,7 @@ class Nav extends React.Component {
             </Route>
             <Route path="/">
               <Home />
-            </Route>
+            </Route>           
           </Switch>    
 
         </Router>

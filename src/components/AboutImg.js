@@ -1,9 +1,6 @@
 import React from 'react';
 import '../App.css';
 
-
-
-
 class AboutImg extends React.Component {
 
   componentDidMount() {}
