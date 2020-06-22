@@ -224,6 +224,9 @@
   background-color: #f6f5ec;
   padding: 50px;
 }
+.more-info-container a {
+  text-decoration: none;
+}
 .more-info-items {
   display: flex;
   flex-direction: row;
@@ -261,6 +264,10 @@
   text-transform: uppercase;
   font-size: 12px;
   margin-top: 30px;
+}
+.more-info-btn p{
+  text-decoration: none !important;
+  color: #000;
 }
 .more-info-btn:hover {
   background-color: #edc6c6;
