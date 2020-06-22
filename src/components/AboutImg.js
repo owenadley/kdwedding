@@ -13,14 +13,14 @@ class AboutImg extends React.Component {
                     <p className="person-role">The Bride</p>
                     <p className="person-name">Katelyn Adley</p>
                     <div className="about-img-container">
-                        <img className="person-img" src="/kdimg2.jpg"/>
+                        <img alt="Katelyn and Dan" className="person-img" src="/kdimg2.jpg"/>
                     </div>                    
                 </div>
                 <div className="about-img-person">
                     <p className="person-role">The Groom</p>
                     <p className="person-name">Dan Cooper</p>
                     <div className="about-img-container">
-                        <img className="person-img" src="/kdimg1.jpg"/>
+                        <img alt="Katelyn and Dan" className="person-img" src="/kdimg1.jpg"/>
                     </div>
                 </div>                
             </div>

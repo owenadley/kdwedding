@@ -48,7 +48,7 @@ class Wedding extends React.Component {
 
           <div className="event-location">
             <p>Wedding location on map</p>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1waMPGkVNS2xzuqlG3zw_NdQ_aNYR1yk5" width="100%" height="500" frameborder="0"></iframe>
+            <iframe title="Wedding Location" src="https://www.google.com/maps/d/embed?mid=1waMPGkVNS2xzuqlG3zw_NdQ_aNYR1yk5" width="100%" height="500" frameborder="0"></iframe>
           </div>
 
           <Footer />

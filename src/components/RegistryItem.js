@@ -20,7 +20,7 @@ class RegistryItem extends React.Component {
         return (
             <div className="registryitem-container">
                 <div className="registryitem-container-img">
-                    <img src={this.state.img}/>
+                    <img alt="Gift Registry Item" src={this.state.img}/>
                 </div>
                 <div className="registryitem-container-abt">
                     <p>{this.state.title}</p>

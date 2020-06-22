@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
-import {BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
-import Wedding from './pages/Wedding';
+import {BrowserRouter as Redirect } from 'react-router-dom';
 
 class MoreInfo extends React.Component {
 
@@ -31,7 +30,7 @@ class MoreInfo extends React.Component {
                     <div className="more-info-item">
                         <div className="more-info-item-elements">
                             <div className="bottom-icon">
-                                <img src="/icon_location.png"/>
+                                <img alt="Location icon" src="/icon_location.png"/>
                             </div>
                             <p className="more-info-heading">Wedding Location</p>
                             <p className="more-info-subheading">Canmore, Alberta</p>
@@ -41,7 +40,7 @@ class MoreInfo extends React.Component {
                     <div className="more-info-item">
                         <div className="more-info-item-elements">
                             <div className="bottom-icon">
-                                <img src="/icon_gifts.png"/>
+                                <img alt="Gift icon" src="/icon_gifts.png"/>
                             </div>
                             <p className="more-info-heading">Gift Registry</p>
                             <p className="more-info-subheading">Given Freely and out of love</p>

@@ -10,14 +10,14 @@ class Footer extends React.Component {
         <div className="footer-container">
             <div className="footer-items">
                 <div className="footer-item">
-                    <img src="/swirl_left_transparent.png"/>
+                    <img alt="Swirl left" src="/swirl_left_transparent.png"/>
                 </div>
                 <div className="footer-item">
-                    <img src="/birds_icon.png"/>
+                    <img alt="Birds" src="/birds_icon.png"/>
                     <p>Katelyn & Dan</p>
                 </div>
                 <div className="footer-item">
-                    <img src="/swirl_right_transparent.png"/>
+                    <img alt="Swirl right" src="/swirl_right_transparent.png"/>
                 </div>                
                                 
             </div>

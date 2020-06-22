@@ -16,7 +16,7 @@ class GuestInfo extends React.Component {
             </div>
             <div class="guestinfo-details">
               <div class="guestinfo-details-img">
-                <img src="/blackstone.jpg"/>
+                <img alt="Blackstone resort" src="/blackstone.jpg"/>
               </div>
               <div class="guestinfo-details-text">
                 <p>We have secured a block of rooms at Blackstone Mountain Lodge for our wedding weekend. Please make sure you tell them you are with the Adley-Cooper wedding (code: CAWD20) when you book through Blackstone to receive a discounted rate. It is about a three minute walk to Cornerstone Theatre for the reception.</p>
@@ -32,7 +32,7 @@ class GuestInfo extends React.Component {
             </div>
             <div class="guestinfo-details">
               <div class="guestinfo-details-img">
-                  <img src="/threesisters.jpg"/>
+                  <img alt="Three sisters mountains" src="/threesisters.jpg"/>
               </div>
               <div class="guestinfo-details-text">
                 <p>We hope you have a chance to explore and enjoy Canmore and the surrounding area. We love it here!</p>
@@ -74,9 +74,9 @@ class GuestInfo extends React.Component {
             <div class="guestinfo-details-text">
               <p>Our wedding will be held in Canmore, just over an hour from the Calgary airport. For all our out-of-towners, there will be car rentals and shuttles at the airport, but we suggest making these arrangements well in advance. Some of the shuttles you can take are:</p>
               <ul id="transpo">
-                <li><a href="">Brewster Banff Airport Express</a></li>
-                <li><a href="">Banff Aiporter</a></li>
-                <li><a href="">On -> It</a></li>
+                <li>Brewster Banff Airport Express</li>
+                <li>Banff Aiporter</li>
+                <li>On -> It</li>
               </ul>
               <p>Once in Canmore, there are multiple cab companies available or the local Roam bus.</p>
             </div>
