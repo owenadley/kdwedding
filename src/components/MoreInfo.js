@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
-import {BrowserRouter as Redirect } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
+import ReactGA from 'react-ga';
 class MoreInfo extends React.Component {
 
   componentDidMount() {}
@@ -14,14 +14,7 @@ class MoreInfo extends React.Component {
         }
     }
 
-  render() {    
-
-    if (this.state.redirectMore) {
-        return <Redirect to="/wedding" push={true}/>
-    }
-    if (this.state.redirectRegistry) {
-        return <Redirect to="/registry" push={true}/>
-    }    
+  render() {      
 
       return (
         <div className="more-info-container">
@@ -34,7 +27,7 @@ class MoreInfo extends React.Component {
                             </div>
                             <p className="more-info-heading">Wedding Location</p>
                             <p className="more-info-subheading">Canmore, Alberta</p>
-                            <div className="more-info-btn" onClick={() => this.setState({redirectMore: true})}><p>Read more</p></div>
+                            <Link onClick={() => ReactGA.pageview('/wedding')} to="/wedding"><div className="more-info-btn"><p>Read more</p></div></Link>
                         </div>    
                     </div>   
                     <div className="more-info-item">
@@ -44,7 +37,7 @@ class MoreInfo extends React.Component {
                             </div>
                             <p className="more-info-heading">Gift Registry</p>
                             <p className="more-info-subheading">Given Freely and out of love</p>
-                            <div className="more-info-btn" onClick={() => this.setState({redirectRegistry: true})}><p>View Registry</p></div>
+                            <Link onClick={() => ReactGA.pageview('/registry')} to="/registry"><div className="more-info-btn"><p>View Registry</p></div></Link>
                         </div>    
                     </div>                           
                 </div>           
