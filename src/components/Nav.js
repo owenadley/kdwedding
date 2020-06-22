@@ -7,6 +7,11 @@ import GuestInfo from '../components/pages/GuestInfo';
 import Registry from '../components/pages/Registry';
 
 class Nav extends React.Component {
+
+  componentDidMount() {
+    document.title = "K&D Wedding";
+  }
+
   render() {
     return (
       <div className="container">
