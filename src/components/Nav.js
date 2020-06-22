@@ -5,11 +5,14 @@ import Home from '../components/pages/Home';
 import Wedding from '../components/pages/Wedding';
 import GuestInfo from '../components/pages/GuestInfo';
 import Registry from '../components/pages/Registry';
+import ReactGA from 'react-ga';
 
 class Nav extends React.Component {
 
   componentDidMount() {
     document.title = "K&D Wedding";
+    ReactGA.initialize('UA-149133035-1');
+    ReactGA.pageview('/');
   }
 
   render() {
@@ -18,15 +21,15 @@ class Nav extends React.Component {
         <Router>
           <div className="nav">
             <div className="nav-tab" id="nav-tab-1">
-            <Link to="/"><p className="nav-tab-text">HOME</p></Link>
+            <Link to="/"><p onClick={ReactGA.pageview('/')} className="nav-tab-text">HOME</p></Link>
             </div>
 
             <div className="nav-tab" id="nav-tab-2">
-            <Link to="/wedding"><p className="nav-tab-text">THE WEDDING</p></Link>
+            <Link to="/wedding"><p onClick={()=> {ReactGA.pageview('/wedding')}} className="nav-tab-text">THE WEDDING</p></Link>
             </div>
 
             <div className="nav-tab" id="nav-tab-3">
-            <Link to="/guestinfo"><p className="nav-tab-text">GUEST INFO</p></Link>
+            <Link to="/guestinfo"><p onClick={()=> {ReactGA.pageview('/guestinfo')}} className="nav-tab-text">GUEST INFO</p></Link>
             </div>
           </div>
 

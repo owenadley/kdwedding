@@ -4,6 +4,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 
 class GuestInfo extends React.Component {
+
   render() {
     return (
       <div className="guestinfo">
