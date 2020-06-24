@@ -10,18 +10,51 @@ import ScrollToTop from '../components/ScrollToTop';
 
 class Nav extends React.Component {
 
+  constructor(props) {
+    super(props);
+
+    this.listener = null;
+    this.state = {
+      scrollStatus: "top"
+    };
+  }
+
   componentDidMount() {
     document.title = "K&D Wedding";
     ReactGA.initialize('UA-149133035-1');
     ReactGA.pageview('/');
+
+    this.listener = document.addEventListener("scroll", e => {
+      var scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 150) {
+        if (this.state.scrollStatus !== "offTop") {
+          this.setState({scrollStatus: "offTop"});
+        }
+      } else {
+        if (this.state.scrollStatus !== "top") {
+          this.setState({scrollStatus: "top"});
+        }
+      }
+    })
+  }
+
+  componentDidUpdate() {
+    document.removeEventListener("scroll", this.listener);
   }
 
   render() {
+
+    let isScrolled = this.state.scrollStatus;
+    let nav;
+
+    isScrolled === "top" ? nav = "nav" : nav = "navScrolled";
+    
     return (
       <div className="container">
         <Router>
           <ScrollToTop>
-            <div className="nav">
+
+            <div className={nav}>
               <div className="nav-tab" id="nav-tab-1">
               <Link to="/"><p onClick={ReactGA.pageview('/')} className="nav-tab-text">HOME</p></Link>
               </div>

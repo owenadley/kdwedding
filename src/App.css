@@ -21,26 +21,42 @@
   width:100%;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid #fff;
-  background: rgba(255, 255, 255, 1);
   z-index: 999;
+}
+
+.navScrolled {
+  display:flex;
+  position: fixed;
+  top:0;
+  left:0;
+  height:70px;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, .9);
   border-bottom: 3px solid #ebc6c6;
 }
+
 .nav-tab {
-  padding-left: 20px;
-  padding-right: 20px;
+  display: flex;
+  padding: 0px 20px;
 }
 .nav-tab a {
   text-decoration: none !important;
 }
 .nav-tab-text {
   border: 0;
-  color: black;
+  color: #263238;
+  font-size: 20px;
   font-weight: 600;
 }
 .nav-tab-text:hover {
   font-weight: 700;
   color: #2d2e21;
+}
+.nav-tab-text:focus {
+  color:#2d2e21
 }
 
 
@@ -63,6 +79,8 @@
   top:0;
   left:0;
   background: rgba(0, 0, 0, 0.4); 
+  background: -webkit-linear-gradient(#ebc6c6,rgba(0, 0, 0, 0.4) );
+  background: linear-gradient(rgba(235, 198, 198, 0.5), rgba(0, 0, 0, 0.5) 30%); /* The least supported option. */
   width: 100%;
   height: 90vh;   
 }
@@ -70,7 +88,7 @@
   margin:0px;
   padding:0px;
   position: absolute;
-  top: 200px;
+  top: 150px;
   left: 70px;
   text-align: left;
 }
@@ -105,15 +123,17 @@
 }
 .home-backdrop-tint-sm {
   display:none;
-}
+} 
 
-@media (max-width: 829px) {
+ @media (max-width: 829px) {
   .home-backdrop-tint-sm {
     display:block;
     position: absolute;
     top:0;
     left:0;
     background: rgba(0, 0, 0, 0.4); 
+    background: -webkit-linear-gradient(#ebc6c6,rgba(0, 0, 0, 0.4) );
+    background: linear-gradient(rgba(235, 198, 198, 0.5), rgba(0, 0, 0, 0.5) 30%); /* The least supported option. */
     width: 100%;
     height: 100vh;   
   }
@@ -129,7 +149,7 @@
     margin:0px;
     padding:0px;
     position: absolute;
-    top: 120px;
+    top: 150px;
     left: 50px;
     text-align: left;
   }
@@ -147,7 +167,7 @@
     margin: 0;
     margin-top:20px;
   }  
-}
+} 
 
 
 
@@ -155,15 +175,30 @@
 
 /* COUNTDOWN TIMER */
 
+.countdown-timer {
+  
+}
+
 .countdown {
+  max-height: inherit;
   height: 400px;
   background-color: #ebc6c6;
+  width:100%;
+  transform: skewY(3deg);
+  overflow: none;
+  margin-top: -45px;
+}
+
+.countdown .subheading {
+  font-family: fancy-cursive;
+  transform: skewY(-2deg);
 }
 .countdown-times {
   display: flex;
   flex-direction:  row;
   justify-content: center;
   padding: 30px;
+  transform: skewY(-2deg);
 }
 .countdown-times div {
   margin: 0px 0px;
@@ -186,11 +221,13 @@
 .countdown-subheading {
   margin-top: 10px;
   font-size: 20px;
+  transform: skewY(-2deg);
 }
 
 /* ABOUTIMG */
 .about-img {
-  padding: 30px 0px;  
+  padding: 30px 0px; 
+  margin-top: 40px; 
 }
 .person-img {
   max-width: 100%;
@@ -221,7 +258,7 @@
 /* MOREINFO */
 
 .more-info-container {
-  background-color: #f6f5ec;
+  background-color: #f7f1e3;
   padding: 50px;
 }
 .more-info-container a {
@@ -337,6 +374,7 @@
 }
 .event-time {
   font-size: 50px;
+  font-family: fancy-cursive;
 }
 .event-timing {
   padding: 20px;

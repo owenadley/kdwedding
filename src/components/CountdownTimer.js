@@ -32,21 +32,23 @@ class CountdownTimer extends React.Component {
   render() {
       return (
     <div className="countdown">
-      <p className='subheading'>October 24th, 2020</p>
-      <p className="countdown-subheading">Countdown to Wedding ceremony</p>
-      <div className="countdown-times">
-        <div>
-          <p className="countdown-number">{this.state.months}</p>
-          <p className="countdown-label">Months</p>
+      <div className="countdown-n">
+        <p className='subheading'>October 24th, 2020</p>
+        <p className="countdown-subheading">Countdown to the Ceremony</p>
+        <div className="countdown-times">
+          <div>
+            <p className="countdown-number">{this.state.months}</p>
+            <p className="countdown-label">Months</p>
+          </div>
+          <div>
+            <p className="countdown-number">{this.state.days}</p>
+            <p className="countdown-label">Days</p>
+          </div>
+          <div>
+            <p className="countdown-number">{this.state.hours}</p>
+            <p className="countdown-label">Hours</p>
+          </div>                
         </div>
-        <div>
-          <p className="countdown-number">{this.state.days}</p>
-          <p className="countdown-label">Days</p>
-        </div>
-        <div>
-          <p className="countdown-number">{this.state.hours}</p>
-          <p className="countdown-label">Hours</p>
-        </div>                
       </div>
     </div>
       )

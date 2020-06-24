@@ -30,10 +30,12 @@ function Home() {
 
         <div className="countdown-timer">
               <CountdownTimer />
-              <AboutImg />
-              <MoreInfo />
-              <Footer />
         </div>
+
+        <AboutImg />
+        <MoreInfo />
+        <Footer />
+
     </div>
 
   ); 
