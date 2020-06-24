@@ -4,6 +4,7 @@ import CountdownTimer from '../CountdownTimer';
 import AboutImg from '../AboutImg';
 import MoreInfo from '../MoreInfo';
 import Footer from '../Footer';
+import RescheduleInfo from '../RescheduleInfo';
 
 function Home() {
 
@@ -32,6 +33,7 @@ function Home() {
               <CountdownTimer />
         </div>
 
+        <RescheduleInfo />
         <AboutImg />
         <MoreInfo />
         <Footer />

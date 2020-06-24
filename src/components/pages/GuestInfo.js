@@ -11,15 +11,15 @@ class GuestInfo extends React.Component {
         <Header title="Guest Info" />
 
         <div className="guestinfo-elements">
-          <div class="guestinfo-element">
-            <div class="guestinfo-title">
+          <div className="guestinfo-element" id="accomodations">
+            <div className="guestinfo-title">
               <p>Accomodations</p>
             </div>
-            <div class="guestinfo-details">
-              <div class="guestinfo-details-img">
+            <div className="guestinfo-details">
+              <div className="guestinfo-details-img">
                 <img alt="Blackstone resort" src="/blackstone.jpg"/>
               </div>
-              <div class="guestinfo-details-text">
+              <div className="guestinfo-details-text">
                 <p>We have secured a block of rooms at Blackstone Mountain Lodge for our wedding weekend. Please make sure you tell them you are with the Adley-Cooper wedding (code: CAWD20) when you book through Blackstone to receive a discounted rate. It is about a three minute walk to Cornerstone Theatre for the reception.</p>
                 <p>Blackstone Mountain Lodge phone number: (403) 609-8098</p>
                 <p>Alternatively, there are lots of hotels and rental options in Canmore within walking distance to our reception location at Cornerstone Theatre, however they can fill up fast, so don't wait to book!</p>
@@ -27,15 +27,15 @@ class GuestInfo extends React.Component {
             </div>
           </div>
 
-          <div class="guestinfo-element">
-            <div class="guestinfo-title">
+          <div className="guestinfo-element">
+            <div className="guestinfo-title">
               <p>Explore Canmore</p>
             </div>
-            <div class="guestinfo-details">
-              <div class="guestinfo-details-img">
+            <div className="guestinfo-details">
+              <div className="guestinfo-details-img">
                   <img alt="Three sisters mountains" src="/threesisters.jpg"/>
               </div>
-              <div class="guestinfo-details-text">
+              <div className="guestinfo-details-text">
                 <p>We hope you have a chance to explore and enjoy Canmore and the surrounding area. We love it here!</p>
                 <p>Canmore is an easy town to walk around. Blackstone Mountain Lodge (in accomodations) to Main Street (8 St) Canmore is about a 15 minute walk. Walking up and down Main Street will take about 20 minutes, depending on how much shopping you do</p>
                 <hr className="general-hr"/>
@@ -68,7 +68,7 @@ class GuestInfo extends React.Component {
             </div>
           </div>        
 
-          <div class="guestinfo-element">
+          <div class="guestinfo-element" id="transportation">
             <div class="guestinfo-title">
               <p>Transportation</p>
             </div>

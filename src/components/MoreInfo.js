@@ -2,6 +2,10 @@ import React from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import ReactGA from 'react-ga';
+import { faMapMarkerAlt, faGift } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
 class MoreInfo extends React.Component {
 
   componentDidMount() {}
@@ -23,7 +27,7 @@ class MoreInfo extends React.Component {
                     <div className="more-info-item">
                         <div className="more-info-item-elements">
                             <div className="bottom-icon">
-                                <img alt="Location icon" src="/icon_location.png"/>
+                                <FontAwesomeIcon className="iconBounce" icon={faMapMarkerAlt} color="#000" size="3x"/>
                             </div>
                             <p className="more-info-heading">Wedding Location</p>
                             <p className="more-info-subheading">Canmore, Alberta</p>
@@ -33,7 +37,7 @@ class MoreInfo extends React.Component {
                     <div className="more-info-item">
                         <div className="more-info-item-elements">
                             <div className="bottom-icon">
-                                <img alt="Gift icon" src="/icon_gifts.png"/>
+                                <FontAwesomeIcon className="iconBounce" icon={faGift} color="#000" size="3x"/>
                             </div>
                             <p className="more-info-heading">Gift Registry</p>
                             <p className="more-info-subheading">Given Freely and out of love</p>
