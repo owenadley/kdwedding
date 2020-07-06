@@ -6,6 +6,9 @@
 .App {
   text-align: center;
 }
+.container {
+  overflow: hidden;
+}
 
 /*  NAV
     
@@ -56,6 +59,21 @@
   animation-duration: 0.8s;
   animation-name: hometext;
 }
+
+@media (max-width: 385px) {
+  .nav-tab-text {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+@media (max-width: 320px) {
+  .nav-tab-text {
+    font-size: 12px;
+  }
+}
+
+
 .nav-tab-text:hover {
   font-weight: 700;
   color: #2d2e21;
@@ -167,6 +185,7 @@
     left: 50px;
     text-align: left;
   }
+
   .home-backdrop-text p#tagline {
     font-weight: 800;
     color: #fff;
@@ -183,20 +202,48 @@
   }  
 } 
 
+@media (max-height: 690px) {
+  .home-backdrop-text {
+    top: 100px;
+  }
+}
+@media (max-width: 350px) {
+  .home-backdrop-text {
+    left: 30px;
+  }
+  .home-backdrop-text p#tagline {
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    line-height: 1;
+  }
+  .home-backdrop-text p#names {
+    font-family: fancy-cursive;
+    font-size: 30px;
+    color:#fff;
+    margin: 0;
+    margin-top:20px;
+  } 
+}
+
 
 /* Reschedule Info */
 .reschedule-info {
   background-color: #fff;
-  padding: 110px 120px 40px 120px;
+  padding: 110px 3em 40px 3em;
   margin-top: -50px;
 }
 .reschedule-info h2 {
   padding-bottom: 20px;
 }
 .reschedule-info-text {
+  justify-content: space-around;
   color: #000;
   line-height: 1.9;
 }
+
+
 
 
 
@@ -204,7 +251,7 @@
 
 .countdown {
   max-height: inherit;
-  height: 480px;
+  height: 460px;
   background-color: #ebc6c6;
   width:100%;
   transform: skewY(3deg);
@@ -252,6 +299,12 @@
   margin-top: 10px;
   font-size: 20px;
   transform: skewY(-2deg);
+}
+
+@media (max-width: 550px) {
+  .countdown {
+    height: 400px;
+  }
 }
 
 /* ABOUTIMG */
@@ -511,9 +564,10 @@
 .sub-backdrop-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 55vh;
-  padding-top: 115px;
+
 }
 .sub-backdrop-item > p {
   text-transform: uppercase;
@@ -552,6 +606,10 @@
   padding: 30px;
   background-color: #ebc6c6;
 }
+.guestinfo-element#explorecanmore {
+  padding: 30px;
+  background-color: #fff;
+}
 
 .guestinfo-title p {
   font-size: 25px;
@@ -562,19 +620,23 @@
 .guestinfo-details {
   display: flex;
   flex-direction: row;
-  
+}
+.guestinfo-details-img {
+  flex: 1;
 }
 .guestinfo-details-text {
+  flex: 1;
   display: flex;
   flex-direction: column;
   padding: 20px;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   font-size: 17px;
   font-weight: 400;
 }
 .guestinfo-details-img img {
-  max-width: 100%;
+  max-width: 80%;
 }
 .guestinfo-details-text ul > li {
   text-align: left;
@@ -591,7 +653,7 @@
   -moz-columns: 1;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .guestinfo-details {
       flex-direction: column;
   }

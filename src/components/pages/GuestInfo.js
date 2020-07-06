@@ -13,7 +13,7 @@ class GuestInfo extends React.Component {
         <div className="guestinfo-elements">
           <div className="guestinfo-element" id="accomodations">
             <div className="guestinfo-title">
-              <p>Accomodations</p>
+              <p>Accommodations</p>
             </div>
             <div className="guestinfo-details">
               <div className="guestinfo-details-img">
@@ -27,7 +27,7 @@ class GuestInfo extends React.Component {
             </div>
           </div>
 
-          <div className="guestinfo-element">
+          <div className="guestinfo-element" id="explorecanmore">
             <div className="guestinfo-title">
               <p>Explore Canmore</p>
             </div>

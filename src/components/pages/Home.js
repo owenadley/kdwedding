@@ -8,6 +8,7 @@ import RescheduleInfo from '../RescheduleInfo';
 
 function Home() {
 
+  // TODO: Update Date
   return (
 
     <div className="home">
@@ -15,7 +16,7 @@ function Home() {
           <div className="home-backdrop-text">
             <p id="tagline">WE ARE GETTING MARRIED!</p>
             <p id="names">Katelyn <span>&</span> Dan</p>
-            <p id="date"><span><img alt="Swirl left" src="/swirl_left_small.png"/></span><span id="datetext">24.10.2020</span><span><img alt="Swirl right" src="/swirl_right_small.png"/></span></p>
+            <p id="date"><span><img alt="Swirl left" src="/swirl_left_small.png"/></span><span id="datetext">22.5.2021</span><span><img alt="Swirl right" src="/swirl_right_small.png"/></span></p>
           </div>
         </div>
         <div className="home-backdrop-tint-sm">
