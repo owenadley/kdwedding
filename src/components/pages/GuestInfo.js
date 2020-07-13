@@ -47,8 +47,7 @@ class GuestInfo extends React.Component {
                     <li>Grab a cup of coffee at Beamers</li>
                     <li>Check out the Rocky Mountain Soap store on Main St.</li>
                     <li>Walk up and down Main Street and explore the local stores</li>
-                    <li>Hit the new Grizzly Paw Brewery 310 location (One block from
-                      Cornerstone Theatre, where you'll be going for our reception)</li>
+                    <li>Hit the new Grizzly Paw Brewery 310 location</li>
                   </ul>
                 </div>
                 <hr />
@@ -58,8 +57,8 @@ class GuestInfo extends React.Component {
                     <li>Go for a drive to check out Spray Lakes</li>
                     <li>Take a walk around Quarry Lake in Canmore</li>
                     <li>Day trip to the Columbia Ice fields</li>
-                    <li>Grawssi Lake walk/hike - 20 mins drive from Canmore</li>
-                    <li>Visit Maraine Lake, Lake Louise and the Fairmount hotel</li>
+                    <li>Grassi Lake walk/hike - 20 mins drive from Canmore</li>
+                    <li>Visit Moraine Lake, Lake Louise and the Fairmont Hotel</li>
                     <li>Visit Sulphur Mountain Gondola near Banff</li>
                     <li>Hiking near Kananaskis Lodge - about a half hour drive from Canmore</li>
                   </ul>
@@ -73,7 +72,7 @@ class GuestInfo extends React.Component {
               <p>Transportation</p>
             </div>
             <div class="guestinfo-details-text">
-              <p>Our wedding will be held in Canmore, just over an hour from the Calgary airport. For all our out-of-towners, there will be car rentals and shuttles at the airport, but we suggest making these arrangements well in advance. Some of the shuttles you can take are:</p>
+              <p>Our wedding will be held in Canmore, just over an hour from the Calgary airport. For all our out-of-towners, there are car rentals and shuttles at the airport, but we suggest making these arrangements well in advance. Some of the shuttles you can take are:</p>
               <ul id="transpo">
                 <li>Brewster Banff Airport Express</li>
                 <li>Banff Aiporter</li>

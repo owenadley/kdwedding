@@ -10,7 +10,7 @@ class Wedding extends React.Component {
         <Header title="The Wedding" />
         <div className="events">
             <div className="event">
-              <div className="event-title">Ceremony</div>
+              <div className="event-title">Outdoor Ceremony</div>
               <div className="event-info">
                 <div className="event-info-details">  
                   <p className="event-location-name">Tree Island Wedding Ceremony Site</p>
