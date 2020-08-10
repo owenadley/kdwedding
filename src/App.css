@@ -612,9 +612,10 @@
 }
 
 .guestinfo-title p {
-  font-size: 25px;
+  font-size: 45px;
   font-weight: 600;
   padding-bottom: 30px;
+  font-family: fancy-cursive;
 }
 
 .guestinfo-details {
@@ -630,7 +631,7 @@
   flex-direction: column;
   padding: 20px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   font-size: 17px;
   font-weight: 400;

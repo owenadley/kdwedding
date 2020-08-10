@@ -20,9 +20,8 @@ class GuestInfo extends React.Component {
                 <img alt="Blackstone resort" src="/blackstone.jpg"/>
               </div>
               <div className="guestinfo-details-text">
-                <p>We have secured a block of rooms at Blackstone Mountain Lodge for our wedding weekend. Please make sure you tell them you are with the Adley-Cooper wedding (code: CAWD20) when you book through Blackstone to receive a discounted rate. It is about a three minute walk to Cornerstone Theatre for the reception.</p>
-                <p>Blackstone Mountain Lodge phone number: (403) 609-8098</p>
-                <p>Alternatively, there are lots of hotels and rental options in Canmore within walking distance to our reception location at Cornerstone Theatre, however they can fill up fast, so don't wait to book!</p>
+                <p>The wedding party will be staying at Blackstone Mountain Lodge (403) 609-8098 for our wedding weekend. If you’d like to join us at Blackstone you can use the code “WEDD” when you book for a 15% discount. </p>
+                <p>Alternatively, there are lots of hotel and rental options in Canmore, however they can fill up fast, so don’t wait to book!</p>
               </div>
             </div>
           </div>
@@ -37,7 +36,7 @@ class GuestInfo extends React.Component {
               </div>
               <div className="guestinfo-details-text">
                 <p>We hope you have a chance to explore and enjoy Canmore and the surrounding area. We love it here!</p>
-                <p>Canmore is an easy town to walk around. Blackstone Mountain Lodge (in accomodations) to Main Street (8 St) Canmore is about a 15 minute walk. Walking up and down Main Street will take about 20 minutes, depending on how much shopping you do</p>
+                <p>Canmore is an easy town to walk around. Blackstone Mountain Lodge to Main Street (8 St) Canmore is about a 15 minute walk. Walking up and down Main Street will take about 20 minutes, depending on how much shopping you do</p>
                 <hr className="general-hr"/>
                 <div className="guestinfo-details-text-item">
                   <p>On our wedding day, you'll have some free time between the ceremony and the reception, so we encourage you to check out beautiful Canmore. Here are some of our favourite places:</p>

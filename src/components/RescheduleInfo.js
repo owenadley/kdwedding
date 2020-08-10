@@ -16,7 +16,7 @@ We’ve made the very difficult decision to postpone our wedding due to the ongo
 
 With this date change, we have also had to change our venue to the Canmore Nordic Centre. Please see the map for exact location details.
 
-If you have already booked a room through our wedding block at Blackstone Mountain Lodge, you can cancel by calling 403-679-7098. If you booked, but did not go through our block, please let me know.
+If you have already booked a room through our wedding block at Blackstone Mountain Lodge, you can cancel by calling 403-679-7098.
 
 We’re truly sorry for the inconvenience but appreciate your understanding and love through this time, and we can’t wait to celebrate with you next year!
 
