@@ -41,6 +41,107 @@
   border-bottom: 3px solid #ebc6c6;
 }
 
+.mobile-nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: #ebc6c6;
+  flex-direction: column;
+  z-index: 1999;
+  padding: 10;
+  border-style: none;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: 1px solid #f2f2f2;
+  
+}
+.mobile-nav-wrap {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+/*   left: 50%;
+  top: 20%;
+  transform: translateX(-50%); */
+  background-color: #ebc6c6;
+  animation: slideb 0.8s backwards;
+  z-index: 999;
+  left: -100%;
+}
+
+.mobile-nav-wrap-trans {
+  display: flex;
+  animation: 1s; 
+  animation: slide 0.8s forwards;
+}
+
+
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}
+
+@-webkit-keyframes slideb {
+  100% { left: -100%; }
+}
+
+@keyframes slideb {
+  100% { left: -100%; }
+}
+
+.nav-tabm {
+  right: 0;
+  flex-direction: column;  
+}
+.nav-tabm a {
+  text-decoration: none !important;
+}
+.nav-tab-textm {
+  border: 0;
+  color: #263238;
+  font-size: 20px;
+  font-weight: 700;
+/*   animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0, 1, 0.5, 1.1);
+  animation-duration: 0.8s;
+  animation-name: hometext; */
+}
+
+@media (max-width: 560px) {
+  .nav {
+    display: none;
+  }
+  .navScrolled {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+  }
+}
+@media (min-width: 560px) {
+  .nav {
+    display: flex;
+  }
+  .navScrolled {
+    display: flex;
+  }
+  .mobile-nav {
+    display: none;
+  }  
+}
+
 .nav-tab {
   display: flex;
   padding: 0px 20px;
@@ -241,6 +342,14 @@
   justify-content: space-around;
   color: #000;
   line-height: 1.9;
+  font-size: 14px;
+}
+.reschedule-info-text2 {
+  justify-content: space-around;
+  color: #000;
+  line-height: 1.9;
+  font-size: 17px;
+  margin-bottom: 80px;
 }
 
 
@@ -599,8 +708,9 @@
 }
 
 .guestinfo-element#accomodations {
-  padding: 30px;
   background-color: #ebc6c6;
+  display: flex;
+  flex-direction: row;
 }
 .guestinfo-element#transportation {
   padding: 30px;
@@ -614,7 +724,8 @@
 .guestinfo-title p {
   font-size: 45px;
   font-weight: 600;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
+  margin:3;
   font-family: fancy-cursive;
 }
 
@@ -622,8 +733,58 @@
   display: flex;
   flex-direction: row;
 }
+
+
+.sec-accomodations {
+  background-color: #EBC6C6;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+}
+.sec-accomodations#explorecanmore {
+  background-color: #fff;
+
+}
+.acc-img {
+  display:flex;
+  flex:1;
+  background-image: url('/blackstone.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+.expc-img {
+  display:flex;
+  flex:1;
+  background-image: url('/threesisters.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.acc-info {
+  display:flex;
+  flex-direction:column;
+  flex:2;
+  padding: 0 40px 20px 40px;
+}
+.acc-text {
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+}
+.acc-text p {
+  font-size: 20px;
+}
+.acc-title {
+  font-family: fancy-cursive;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+
+
 .guestinfo-details-img {
-  flex: 1;
 }
 .guestinfo-details-text {
   flex: 1;
@@ -633,12 +794,19 @@
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 400;
 }
 .guestinfo-details-img img {
   max-width: 80%;
 }
+
+.guestinfo-details-img#accimg img {
+  max-width: 100%;
+}
+
+
+
 .guestinfo-details-text ul > li {
   text-align: left;
   padding:10px;
@@ -714,6 +882,7 @@
 .registryitem-container-abt {
   flex: 1;
   flex-direction: column;
+  padding: 5px;
 }
 .registryitem-container-abt p:nth-child(1)  {
   font-weight: bold;
@@ -747,4 +916,21 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.rsvp-container {
+  padding:100px;
+}
+.rsvp-container p {
+  font-weight: 500;
+  font-size: 40px;
+   
+}
+.more-info-item#rsvpregistry {
+  background-color: #ebc6c6;
+  padding:90px;
+}
+.more-info-btn#rsvpmis {
+  width: 50%;
+  margin: 0 auto;
 }

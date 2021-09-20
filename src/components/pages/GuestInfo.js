@@ -11,35 +11,40 @@ class GuestInfo extends React.Component {
         <Header title="Guest Info" />
 
         <div className="guestinfo-elements">
-          <div className="guestinfo-element" id="accomodations">
-            <div className="guestinfo-title">
-              <p>Accommodations</p>
+
+          <div className="sec-accomodations">
+
+            <div className="acc-img">
             </div>
-            <div className="guestinfo-details">
-              <div className="guestinfo-details-img">
-                <img alt="Blackstone resort" src="/blackstone.jpg"/>
+
+            <div className="acc-info">
+
+              <div className="acc-title">
+                <p>Accommodations</p>
               </div>
-              <div className="guestinfo-details-text">
-                <p>The wedding party will be staying at Blackstone Mountain Lodge (403) 609-8098 for our wedding weekend. If you’d like to join us at Blackstone you can use the code “WEDD” when you book for a 15% discount. </p>
+
+              <div className="acc-text">
+                <p>The wedding party will be staying at Blackstone Mountain Lodge (403) 609-8098 for our wedding weekend. If you’d like to join us at Blackstone you can use the code “COR1” for 15% off the best flexible rate. To receive this discount you must call Blackstone directly (403-609-8098) to book your room.</p>
                 <p>Alternatively, there are lots of hotel and rental options in Canmore, however they can fill up fast, so don’t wait to book!</p>
               </div>
+ 
             </div>
+
           </div>
 
-          <div className="guestinfo-element" id="explorecanmore">
-            <div className="guestinfo-title">
-              <p>Explore Canmore</p>
-            </div>
-            <div className="guestinfo-details">
-              <div className="guestinfo-details-img">
-                  <img alt="Three sisters mountains" src="/threesisters.jpg"/>
+          <div className="sec-accomodations" id="explorecanmore">
+
+
+            <div className="acc-info">
+
+              <div className="acc-title">
+                <p>Explore Canmore</p>
               </div>
-              <div className="guestinfo-details-text">
+
+              <div className="acc-text">
                 <p>We hope you have a chance to explore and enjoy Canmore and the surrounding area. We love it here!</p>
                 <p>Canmore is an easy town to walk around. Blackstone Mountain Lodge to Main Street (8 St) Canmore is about a 15 minute walk. Walking up and down Main Street will take about 20 minutes, depending on how much shopping you do</p>
-                <hr className="general-hr"/>
-                <div className="guestinfo-details-text-item">
-                  <p>On our wedding day, you'll have some free time between the ceremony and the reception, so we encourage you to check out beautiful Canmore. Here are some of our favourite places:</p>
+                <p>On our wedding day, you'll have some free time between the ceremony and the reception, so we encourage you to check out beautiful Canmore. Here are some of our favourite places:</p>
                   <ul>
                     <li>Check out the Grizzly Paw Pub on Main Street</li>
                     <li>Grab a drink at The Drake</li>
@@ -47,11 +52,8 @@ class GuestInfo extends React.Component {
                     <li>Check out the Rocky Mountain Soap store on Main St.</li>
                     <li>Walk up and down Main Street and explore the local stores</li>
                     <li>Hit the new Grizzly Paw Brewery 310 location</li>
-                  </ul>
-                </div>
-                <hr />
-                <div className="guestinfo-details-text-item">
-                <p>If you are able to stay for a few extra days and are looking for some things to do in the mountains:</p>
+                  </ul>  
+                  <p>If you are able to stay for a few extra days and are looking for some things to do in the mountains:</p>
                   <ul>
                     <li>Go for a drive to check out Spray Lakes</li>
                     <li>Take a walk around Quarry Lake in Canmore</li>
@@ -60,11 +62,16 @@ class GuestInfo extends React.Component {
                     <li>Visit Moraine Lake, Lake Louise and the Fairmont Hotel</li>
                     <li>Visit Sulphur Mountain Gondola near Banff</li>
                     <li>Hiking near Kananaskis Lodge - about a half hour drive from Canmore</li>
-                  </ul>
-                </div>
+                  </ul>                            
               </div>
+ 
             </div>
-          </div>        
+            <div className="expc-img">
+            </div>
+
+          </div>
+
+
 
           <div class="guestinfo-element" id="transportation">
             <div class="guestinfo-title">

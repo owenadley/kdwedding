@@ -14,7 +14,7 @@ class CountdownTimer extends React.Component {
   }
 
   componentDidMount() {
-    var milisec = moment('2021-05-22').diff(moment());
+    var milisec = moment('2022-06-10').diff(moment());
     var day = milisec / 1000 / 60 / 60 / 24;
 
     var months = Math.floor(day/ 30);
@@ -33,8 +33,8 @@ class CountdownTimer extends React.Component {
       return (
     <div className="countdown">
       <div className="countdown-n">
-        <p className='subheading' id="old">October 24th, 2020</p>
-        <p className='subheading' id="new" >May 22nd, 2021</p>
+        <p className='subheading' id="old"></p>
+        <p className='subheading' id="new" >June 10th, 2022</p>
 
         <p className="countdown-subheading">Countdown to the Ceremony</p>
         <div className="countdown-times">
